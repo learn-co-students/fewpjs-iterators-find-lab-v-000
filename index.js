@@ -9,16 +9,11 @@ const superbowlWin = (record) => {
 	
 	const winYear = record.find(record => record.result === 'W' )
 	
-	
-	// if (winYear !== null ) {
+
+	// if (!!winYear) {
 	// 	return winYear.year
 	// } else {
 	// 	return undefined
 	// }
-
-	if (!!winYear) {
-		return winYear.year
-	} else {
-		return undefined
-	}
+	 return !!winYear ? winYear.year : undefined
 }
