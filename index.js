@@ -5,11 +5,6 @@ function testFunc() {
 }
 
 const superbowlWin = (statsArray) => {
-	return statsArray.find( element => {
-		if (element.result === "W"){
-			return element.year
-		} else {
-			return undefined;
-		}
-	})
+  const wins = statsArray.find( element => element.result === "W")
+	return wins ? wins.year : wins
 }
