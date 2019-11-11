@@ -4,6 +4,7 @@ function testFunc() {
   return "hi"
 }
 
+// function declaration
 // function superbowlWin(record) {
 //   // remember to save value to variable after the computer checks for element
 //   // then add variable to if condition
@@ -14,10 +15,11 @@ function testFunc() {
 //   }
 // }
 
+// arrow function 
 const superbowlWin = function(record) {
   let win = record.find(record => record.result === "W");
   if (win) {
-  return win.year;
+    return win.year;
   }
 }
 
