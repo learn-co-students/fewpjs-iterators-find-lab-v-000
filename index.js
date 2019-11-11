@@ -4,9 +4,15 @@ function testFunc() {
   return "hi"
 }
 
-// function superBowlWin(record) {
-//   record.find(result => result === "W")
-//   return record.year;
+function superbowlWin(record) {
+  let win = record.find(record => record.result === "W")
+  if (win) {
+    return win.year
+  }
+}
+
+// const superbowlWin = function(record) {
+//   record.find(r => r.result === "W")
+//   return r.year;
 // }
 
-const superBowlWin = record.find(r => r.result === "W" )
