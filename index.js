@@ -5,9 +5,6 @@ function testFunc() {
 }
 
 const superbowlWin = array => {
-  if (array.find(element => element.result === "W") !== undefined) {
-    return array.find(element => element.result === "W").year;
-  } else {
-    return undefined;
-  }
+  let result = array.find(element => element.result === "W");
+  return !!result ? result.year : undefined;
 }
