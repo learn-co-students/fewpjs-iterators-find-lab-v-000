@@ -16,5 +16,6 @@ function superbowlWin(record) {
   //const win = record.find( ( info ) => info.result === 'W') // ANOTHER WAY TO SOLVE
   //console.log(win, "win")   // { year: "1969", result: "W"},
 
+  // returns a year the KC Chiefs won the superbowl : returns undefined if the record has no win objects
   return !!win ? win.year : undefined 
 }
