@@ -5,5 +5,13 @@ function testFunc() {
 }
 
 function superBowlWin(array){
-  
+  const result = array.find( ({ res }) => result === 'W' );
+  if (result){ 
+    return result.year 
+  }
+    else {
+      return undefined
+
+    }
+
 }
