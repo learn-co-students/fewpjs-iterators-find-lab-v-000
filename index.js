@@ -1,8 +1,8 @@
-const testVar = {}
-
-function testFunc() {
-  return "hi"
-}
+// const testVar = {}
+//
+// function testFunc() {
+//   return "hi"
+// }
 
 const superbowlWin = record => {
   let result = record.find(element => element.result === "W")
